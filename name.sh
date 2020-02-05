@@ -1,6 +1,6 @@
-read -p "Enter your name  " name
-echo $name
+read -p "Username: " name
 check=${#name}
-echo $check
-if [ $check -le 3 ]; then echo "error" ; exit
+if [ $check -le 3 ]; then echo "Please enter minimum 3 character" 
+read -p "Username: " name 
 fi
+echo "Hello $name, How are you?"
