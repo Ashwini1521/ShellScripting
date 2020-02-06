@@ -6,7 +6,7 @@ declare -i head=0
 declare -i tail=0
 declare -i check=0
 
-for (( c=1 ; c<=$number ; c++))
+for (( c=1 ; c=$number ; c++))
 do
 check=$(( (RANDOM %10 +1 ) % 2))
 if [ $check -eq 0 ]
